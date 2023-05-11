@@ -1,0 +1,177 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Dupe (ZXVersion)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({ 	Name = "Dupe", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })local Section = Tab:AddSection({ 	Name = "Below Is Dupe" })
+
+OrionLib:MakeNotification({ 	Name = "Duping Script", 	Content = "Credits To: Ayxmii_TG", 	Image = "rbxassetid://4483345998", 	Time = 5 })
+
+Tab:AddButton({ 	Name = "Dupe", 	Callback = function() 	local args = {
+
+    [1] = "purchase",
+
+    [2] = 10055,
+
+    [3] = 1
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse Duped", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 3
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
+
+	print("button pressed") 	end })  Tab:AddTextbox({
+
+	Name = "Mark Your Cash ● ~ ●",
+
+	Default = "Write On Me!",
+
+	TextDisappear = false,
+
+	Callback = function(Value)
+
+		print(Value)
+
+	end	  
+
+})  local Tab = Window:MakeTab({ 	Name = "More Options", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })  local Section = Tab:AddSection({ 	Name = "Below Are More" })  Tab:AddButton({ 	Name = "50 Dupes", 	Callback = function() 	local args = {
+
+    [1] = "purchase",
+
+    [2] = 10055,
+
+    [3] = 50
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+	print("button pressed") 	end })  Tab:AddButton({ 	Name = "100 Dupes", 	Callback = function() 	local args = {
+
+    [1] = "purchase",
+
+    [2] = 10055,
+
+    [3] = 100
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+	print("button pressed") 	end })  Tab:AddButton({ 	Name = "150 Dupes", 	Callback = function() 	local args = {
+
+    [1] = "purchase",
+
+    [2] = 10055,
+
+    [3] = 150
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+	print("button pressed") 	end })  Tab:AddButton({ 	Name = "200 Dupes!", 	Callback = function() 	local args = {
+
+    [1] = "purchase",
+
+    [2] = 10055,
+
+    [3] = 200
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+	print("button pressed") 	end })  local Tab = Window:MakeTab({ 	Name = "Fusing Options", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })  local Section = Tab:AddSection({ 	Name = "Bypass Fusing Limit!" })  Tab:AddButton({ 	Name = "Fuse 13!😯", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 13
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 50!😎", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 50
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 100!🤩", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 100
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 200!😎", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 200
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 200!😎", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 200
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 200!😎", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 200
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 400!☠", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 400
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Fuse 500!🔥", 	Callback = function() 	local args = {
+
+    [1] = {
+
+        ["10055"] = 500
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))	print("button pressed") 	end })  local Tab = Window:MakeTab({ 	Name = "Misc Options", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })  local Section = Tab:AddSection({ 	Name = "Coming Soon!" })
+
+ OrionLib:Init()
