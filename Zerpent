@@ -1,19 +1,19 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
+   Name = "ZerpentX",
+   LoadingTitle = "Zerpent Interface Opening",
+   LoadingSubtitle = "Kindly Wait...",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
+      FolderName = ZerpentX, -- Create a custom folder for your hub/game
+      FileName = "ZerpentX"
    },
    Discord = {
       Enabled = false,
       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
-   KeySystem = false, -- Set this to true to use our key system
+    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
       Title = "Untitled",
       Subtitle = "Key System",
@@ -24,25 +24,157 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
-local Tab = Window:CreateTab("Shop for Dudes", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Buy Dudes")
+local Tab = Window:CreateTab("Buy New Items", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Changes each update!")
 Rayfield:Notify({
    Title = "Zerpent",
-   Content = "Zerpent Opened!",
+      Content = "Zerpent Opened!",
    Duration = 6.5,
    Image = 4483362458,
    Actions = { -- Notification Buttons
       Ignore = {
-         Name = "Open!",
+         Name = "Okay Lmfao",
          Callback = function()
-         print("The user tapped Open!")
+         print("The user answered!")
       end
    },
 },
 })
 local Button = Tab:CreateButton({
-   Name = "Lil Dude(Normal Patch)",
-   Callback = local args = { [1] = "Lil Dude Real" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args)) end)
-   -- The function that takes place when the button is pressed
+   Name = "Lil Dude (UnNormal Patch)",
+   Callback = function()
+   local args = { [1] = "Lil Dude Real" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Lil Hacker (Normal Patch)",
+   Callback = function()
+   local args = { [1] = "Lil Dude" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Snail Mount",
+   Callback = function()
+   local args = { [1] = "Snail Mount" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sloth Plushie",
+   Callback = function()
+   local args = { [1] = "Sloth Plushie" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Mario Items", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Mario's Shop Frfr")
+local Button = Tab:CreateButton({
+   Name = "Gold Coin",
+   Callback = function()
+   local args = { [1] = "Gold Coin" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Omb Bomb",
+   Callback = function()
+   local args = { [1] = "Omb Bomb" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Helloshi",
+   Callback = function()
+   local args = { [1] = "Helloshi" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mario",
+   Callback = function()
+   local args = { [1] = "Markio" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Luisi",
+   Callback = function()
+   local args = { [1] = "Luisi" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Rainbow Star",
+   Callback = function()
+   local args = { [1] = "Rainbow Star" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Valentine Day (Lol 😂)", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Valentine W Frfr")
+local Button = Tab:CreateButton({
+   Name = "Heart Balloon",
+   Callback = function()
+   local args = { [1] = "Heart Balloon" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Annoying Ugly Ahh Cake",
+   Callback = function()
+   local args = { [1] = "Corazón Cake" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Heart Gift",
+   Callback = function()
+   local args = { [1] = "Heart Gift" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Heart Headphones",
+   Callback = function()
+   local args = { [1] = "Heart Headphones" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Heart Lightstick",
+   Callback = function()
+   local args = { [1] = "Heart Lightstick" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Boxes", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Buy Dem Boxes😱😱😱")
+local Button = Tab:CreateButton({
+   Name = "Box Toy Air",
+   Callback = function()
+   local args = { [1] = "Box Toy Air" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy Egg",
+   Callback = function()
+   local args = { [1] = "Box Toy Egg" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy Box Toy",
+   Callback = function()
+   local args = { [1] = "Box Toy Box Toy" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy Noob",
+   Callback = function()
+   local args = { [1] = "Box Toy Noob" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy House",
+   Callback = function()
+   local args = { [1] = "Box Toy  House" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy Sanic",
+   Callback = function()
+   local args = { [1] = "Box Toy Sanic" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Box Toy Sandman",
+   Callback = function()
+   local args = { [1] = "Box Toy Sandman" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
    end,
 })
