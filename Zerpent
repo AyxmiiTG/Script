@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ARTlocal Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "ZerpentX",
    LoadingTitle = "Zerpent Interface Opening",
@@ -339,8 +339,31 @@ local Button = Tab:CreateButton({
    end,
 })
 local Button = Tab:CreateButton({
-   Name = "Musty Dusy Demogorgan",
+   Name = "Musty Dusty Demogorgan",
    Callback = function()
-   local args = { [1] = "Demogorgen" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   local args = { [1] = "Demogorgan" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Crusty Dusty Kawaii Demogorgan",
+   Callback = function()
+   local args = { [1] = "Kawaii Demogorgan" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "SO YUMMY DARTY DARTY DART",
+   Callback = function()
+   local args = { [1] = "Dart" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Banana Shop", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("BANEYNEY🤑🤑🤑")
+local Button = Tab:CreateButton({
+   Name = "BANEYNEY🤑🤑🤑",
+   Callback = function()
+   local args = { [1] = "The Banana" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Recipes", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Empty Slot")
+local Label = Tab:CreateLabel("Coming Soon!")
