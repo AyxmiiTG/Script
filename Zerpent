@@ -319,3 +319,28 @@ local Button = Tab:CreateButton({
    end,
 })
 local Tab = Window:CreateTab("Stranger Things W Bro", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Stranger Thing W 😱")
+local Button = Tab:CreateButton({
+   Name = "Walky Talky",
+   Callback = function()
+   local args = { [1] = "Walky Talky" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Green Oozy Woozy🤑",
+   Callback = function()
+   local args = { [1] = "Green Ooze" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Retro Bike",
+   Callback = function()
+   local args = { [1] = "Retro Bike" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Musty Dusy Demogorgan",
+   Callback = function()
+   local args = { [1] = "Demogorgen" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
