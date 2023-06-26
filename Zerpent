@@ -221,7 +221,7 @@ chr.Head:Destroy()
 local Button = Tab:CreateButton({
    Name = "Inf Jump",
    Callback = function()
-
+local InfiniteJumpEnabled = true game:GetService("UserInputService").JumpRequest:connect(function() 	if InfiniteJumpEnabled then 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
    end,
 })
 local Tab = Window:CreateTab("Wednesday Hands", 4483362458) -- Title, Image
@@ -298,4 +298,24 @@ local Button = Tab:CreateButton({
    local args = { [1] = "Hand Rainbow" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
    end,
 })
-local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Hello Shitty 😱", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Hello Kitty Gay and Shit")
+local Button = Tab:CreateButton({
+   Name = "Hello Kitty",
+   Callback = function()
+   local args = { [1] = "Hellow Catty" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Unscary goofy ahh Hello Kitty",
+   Callback = function()
+   local args = { [1] = "Hello Scary" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hello Snowy Lol",
+   Callback = function()
+   local args = { [1] = "Hello Snowy" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Stranger Things W Bro", 4483362458) -- Title, Image
