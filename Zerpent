@@ -178,3 +178,37 @@ local Button = Tab:CreateButton({
    local args = { [1] = "Box Toy Sandman" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
    end,
 })
+local Button = Tab:CreateButton({
+   Name = "Black Gorilla OMG😱😱😱,
+   Callback = function()
+   local args = { [1] = "Box Toy Harambe" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("FAKE DROP FOR FREE!?!?!😱")
+local Button = Tab:CreateButton({
+   Name = "XRay Values(Prevent Fake Nothing Scammers Lol)",
+   Callback = function()
+game.Players.localPlayer.XRay.Value = true
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Disable XRay(Button On Top Disables It Too)",
+   Callback = function()
+game.Players.localPlayer.XRay.Value = false
+   end,
+})
+local Tab = Window:CreateTab("Wednesday Hands", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Don't ask but I chopped dem hands💀")
+local Button = Tab:CreateButton({
+   Name = "Hand",
+   Callback = function()
+   local args = { [1] = "Hand" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mario",
+   Callback = function()
+   local args = { [1] = "Mario" } game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+   end,
+})
