@@ -1,12 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Z (Private)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Z-X (Private)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({ 	Name = "Duping", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })local Section = Tab:AddSection({ 	Name = "Use White Pastel Motor" })
 
-OrionLib:MakeNotification({ 	Name = "Z Private", 	Content = "Credits To: JamJam - Hailey - Etc.", 	Image = "rbxassetid://4483345998", 	Time = 5 })
+OrionLib:MakeNotification({ 	Name = "Z-X Is Opening...", 	Content = "Credits To: JamJam - Hailey - Etc.", 	Image = "rbxassetid://4483345998", 	Time = 5 })
 
-Tab:AddButton({ 	Name = "Pastel Dupe", 	Callback = function() 	local args = {
+Tab:AddButton({ 	Name = "Pastel Duping", 	Callback = function() 	local args = {
 
     [1] = "purchase",
 
@@ -18,7 +18,7 @@ Tab:AddButton({ 	Name = "Pastel Dupe", 	Callback = function() 	local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
 
-	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Pastel Fuse", 	Callback = function() 	local args = {
+	print("button pressed") 	end })  Tab:AddButton({ 	Name = "Pastel Fusing", 	Callback = function() 	local args = {
 
     [1] = {
 
@@ -31,7 +31,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin")
 game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
 
 	print("button pressed") 	end })  Tab:AddButton({
-	Name = "Gold Pastel Dupe",
+	Name = "Gold Pastel Duping",
 	Callback = function()  local args = {
     [1] = "purchase",
     [2] = 10055,
@@ -39,6 +39,34 @@ game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fus
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
+
+      		print("button pressed")
+  	end
+})  Tab:AddButton({
+	Name = "Gold Pastel Converter",
+	Callback = function()  local args = {
+    [1] = "10001",
+    [2] = 6,
+    [3] = "Golden"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Upgrade"):WaitForChild("UpgradeRF"):InvokeServer(unpack(args))
+
+      		print("button pressed")
+  	end
+})  Tab:AddButton({
+	Name = "Gold Pastel Fusing",
+	Callback = function()  local args = {
+
+    [1] = {
+
+        ["20055"] = 6
+
+    }
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
 
       		print("button pressed")
   	end
