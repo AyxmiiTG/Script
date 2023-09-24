@@ -1,10 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "CMate (Private)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Z (Private)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({ 	Name = "Duping", 	Icon = "rbxassetid://4483345998", 	PremiumOnly = false })local Section = Tab:AddSection({ 	Name = "Use White Pastel Motor" })
 
-OrionLib:MakeNotification({ 	Name = "CMate", 	Content = "Credits To: JamJam - Hailey - Etc.", 	Image = "rbxassetid://4483345998", 	Time = 5 })
+OrionLib:MakeNotification({ 	Name = "Z Private", 	Content = "Credits To: JamJam - Hailey - Etc.", 	Image = "rbxassetid://4483345998", 	Time = 5 })
 
 Tab:AddButton({ 	Name = "Pastel Dupe", 	Callback = function() 	local args = {
 
@@ -12,7 +12,7 @@ Tab:AddButton({ 	Name = "Pastel Dupe", 	Callback = function() 	local args = {
 
     [2] = 10055,
 
-    [3] = 1
+    [3] = 3
 
 }
 
@@ -41,7 +41,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fus
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Coin"):WaitForChild("CoinMarketRE"):FireServer(unpack(args))
 
       		print("button pressed")
-  	end    
+  	end
 })  Tab:AddTextbox({
 
 	Name = "Mark Your Cash ● ~ ●",
