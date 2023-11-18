@@ -20,8 +20,10 @@ OrionLib:MakeNotification({
 })
 
 Tab:AddButton({
-	Name = "Edge",
-	local args = {
+	Name = "Button!",
+	Callback = function()
+      		print("button pressed")
+local args = {
     [1] = {
         [1] = "EdgeSuccess"
     }
@@ -29,6 +31,5 @@ Tab:AddButton({
 
 game:GetService("Players").LocalPlayer:WaitForChild("CharacterActions"):FireServer(unpack(args))
 
-      		print("button pressed")
   	end    
 })
