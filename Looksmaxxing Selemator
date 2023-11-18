@@ -21,8 +21,7 @@ OrionLib:MakeNotification({
 
 Tab:AddButton({
 	Name = "Edge",
-	Callback = function()
-      		local args = {
+	local args = {
     [1] = {
         [1] = "EdgeSuccess"
     }
@@ -30,34 +29,6 @@ Tab:AddButton({
 
 game:GetService("Players").LocalPlayer:WaitForChild("CharacterActions"):FireServer(unpack(args))
 
+      		print("button pressed")
   	end    
 })
-
-Tab:AddButton({
-	Name = "Upgrade Base",
-	Callback = function()
-      		local args = {
-    [1] = "Base"
-}
-
-game:GetService("Players").LocalPlayer:WaitForChild("Upgrade"):FireServer(unpack(args))
-
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Upgrade Multiplier",
-	Callback = function()
-      		local args = {
-    [1] = "Multi"
-}
-
-game:GetService("Players").LocalPlayer:WaitForChild("Upgrade"):FireServer(unpack(args))
-
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Auto"
-})
-
