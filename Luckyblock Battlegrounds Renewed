@@ -1,0 +1,29 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Arcfield", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Blockzz😎",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Collect Blockzz"
+})
+
+OrionLib:MakeNotification({
+	Name = "Opened!",
+	Content = "Notified User..",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+Tab:AddToggle({
+	Name = "Hatch Block 1",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+function(state) if state then _G.on = true while _G.on do wait() game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer() else _G.on = false end end)
+	end    
+})
