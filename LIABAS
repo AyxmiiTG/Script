@@ -1,0 +1,687 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Script By Mr_Codex#7709",
+	LoadingTitle = "Welcome to Trash Script :O",
+	LoadingSubtitle = "Bubs",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = "Trash",
+		FileName = "Big Hub"
+	},
+	KeySystem = false, -- Set this to true to use their key system
+	KeySettings = {
+		Title = "Sirius Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/sirius)",
+		SaveKey = true,
+		Key = "ABCDEF"
+	}
+})
+
+
+pcall(function()
+getgenv().esdad = true
+while getgenv().esdad == true do
+wait()
+game:GetService("Workspace").sfx.items["loud bruh"]:Destroy()
+end
+end)
+
+
+local function sell()
+
+local args = {
+    [1] = {
+        ["sock"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "Clothing",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.6,
+            ["img"] = "rbxassetid://5684868683",
+            ["grade"] = 2,
+            ["name"] = "sock"
+        },
+        ["spray"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.45,
+            ["img"] = "rbxassetid://10265875593",
+            ["grade"] = 2,
+            ["name"] = "empty spray can"
+        },
+        ["spring"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.25,
+            ["img"] = "rbxassetid://12025882634",
+            ["grade"] = 2,
+            ["name"] = "spring"
+        },
+        ["plank"] = {
+            ["rarity"] = 0.15,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.5,
+            ["img"] = "rbxassetid://20944363",
+            ["grade"] = 2,
+            ["name"] = "plank"
+        },
+        ["battery"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.8,
+            ["img"] = "rbxassetid://10953918865",
+            ["grade"] = 2,
+            ["name"] = "battery"
+        },
+        ["foil"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.2,
+            ["img"] = "rbxassetid://147887823",
+            ["grade"] = 1,
+            ["name"] = "foil"
+        },
+        ["electronics"] = {
+            ["rarity"] = 0.2,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 9.6,
+            ["img"] = "rbxassetid://547416328",
+            ["grade"] = 3,
+            ["name"] = "electronics"
+        },
+        ["gold"] = {
+            ["rarity"] = 0.01,
+            ["category"] = "Collectible",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 100,
+            ["img"] = "rbxassetid://5684864491",
+            ["grade"] = 3,
+            ["name"] = "gold doubloon"
+        },
+        ["pants"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "Clothing",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 10,
+            ["img"] = "rbxassetid://12444750897",
+            ["grade"] = 3,
+            ["name"] = "pants"
+        },
+        ["rotten"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.05,
+            ["img"] = "rbxassetid://12025752984",
+            ["grade"] = 2,
+            ["name"] = "rotten food"
+        },
+        ["nail"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.3,
+            ["img"] = "rbxassetid://11362540073",
+            ["grade"] = 2,
+            ["name"] = "nail"
+        },
+        ["bottle"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 1,
+            ["img"] = "rbxassetid://480355285",
+            ["grade"] = 2,
+            ["name"] = "bottle"
+        },
+        ["comic"] = {
+            ["rarity"] = 0.2,
+            ["category"] = "Collectible",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 250,
+            ["img"] = "rbxassetid://12207060371",
+            ["grade"] = 4,
+            ["name"] = "comic book"
+        },
+        ["hat"] = {
+            ["rarity"] = 0.15,
+            ["category"] = "Clothing",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 15,
+            ["img"] = "rbxassetid://1390615050",
+            ["grade"] = 3,
+            ["name"] = "hat"
+        },
+        ["tp"] = {
+            ["rarity"] = 0.05,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 1,
+            ["img"] = "rbxassetid://6766522014",
+            ["grade"] = 1,
+            ["name"] = "toilet paper"
+        },
+        ["credit"] = {
+            ["rarity"] = 0.3,
+            ["category"] = "Illicit",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 130,
+            ["img"] = "rbxassetid://12207031909",
+            ["grade"] = 4,
+            ["name"] = "credit card"
+        },
+        ["phone"] = {
+            ["rarity"] = 0.35,
+            ["category"] = "Gadget",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 50,
+            ["img"] = "rbxassetid://1519603285",
+            ["grade"] = 4,
+            ["name"] = "phone"
+        },
+        ["plastic"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.04,
+            ["img"] = "rbxassetid://5684862728",
+            ["grade"] = 1,
+            ["name"] = "plastic"
+        },
+        ["watch"] = {
+            ["rarity"] = 0.15,
+            ["category"] = "Collectible",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 75,
+            ["img"] = "rbxassetid://12444841357",
+            ["grade"] = 4,
+            ["name"] = "watch"
+        },
+        ["radio"] = {
+            ["rarity"] = 0.05,
+            ["category"] = "Clothing",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 30,
+            ["img"] = "rbxassetid://1355543652",
+            ["grade"] = 3,
+            ["name"] = "broken radio"
+        },
+        ["can"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.07,
+            ["img"] = "rbxassetid://6874536183",
+            ["grade"] = 1,
+            ["name"] = "tin can"
+        },
+        ["pipe"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.45,
+            ["img"] = "rbxassetid://8608563908",
+            ["grade"] = 2,
+            ["name"] = "rusty pipe"
+        },
+        ["shoe"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "Clothing",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 7.5,
+            ["img"] = "rbxassetid://10912056890",
+            ["grade"] = 3,
+            ["name"] = "shoe"
+        },
+        ["card"] = {
+            ["rarity"] = 0.05,
+            ["category"] = "Collectible",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 20,
+            ["img"] = "rbxassetid://38154272",
+            ["grade"] = 3,
+            ["name"] = "trading card"
+        },
+        ["cloth"] = {
+            ["rarity"] = 0.1,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.15,
+            ["img"] = "rbxassetid://9712134761",
+            ["grade"] = 1,
+            ["name"] = "torn cloth"
+        },
+        ["paper"] = {
+            ["rarity"] = 0.25,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.02,
+            ["img"] = "rbxassetid://6835358763",
+            ["grade"] = 1,
+            ["name"] = "paper"
+        },
+        ["cd"] = {
+            ["rarity"] = 0.19,
+            ["category"] = "Collectible",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 15,
+            ["img"] = "rbxassetid://949160203",
+            ["grade"] = 3,
+            ["name"] = "cd"
+        },
+        ["cardboard"] = {
+            ["rarity"] = 0.15,
+            ["category"] = "trash",
+            ["itemType"] = "trash",
+            ["weight"] = 1,
+            ["value"] = 0.1,
+            ["img"] = "rbxassetid://13390195",
+            ["grade"] = 1,
+            ["name"] = "cardboard"
+        }
+    },
+    [2] = 1000000
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("SellTrash"):FireServer(unpack(args))
+
+end
+
+
+
+_G.Trash = true 
+_G.Sell = true
+_G.Auto = true
+_G.Are = true
+_G.Change = true
+_G.Sound = true
+
+
+
+Rayfield:Notify("Hi 0:", "Welcome", 4483362458) -- Notfication -- Title, Content, Image
+
+local Tab = Window:CreateTab("Farm", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("Farm Functions")
+
+local Toggle = Tab:CreateToggle({
+	Name = "Auto Tool",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            _G.Auto = true
+            while _G.Auto == true do
+                game:GetService("RunService").RenderStepped:wait() 
+                for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
+                    if v.ClassName == "Tool" then
+                    v:Activate()
+                end
+            end
+        end
+    else
+        _G.Auto = false
+    end
+	end,
+})
+
+
+local Toggle = Tab:CreateToggle({
+	Name = "Auto-Sell-Tp",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+    if state then
+        _G.Are = true
+        local twen = 4
+        while _G.Are == true do
+            wait(0.01)
+            local start = game.Players.LocalPlayer.Character.HumanoidRootPart
+            local ens = game:GetService("Workspace").guy.Head
+
+            local distance = (start.Position - ens.Position).Magnitude
+            
+            
+            if math.floor(distance) >= 50 then
+                twen = 4.5
+            end
+
+            if math.floor(distance) >= 85 then
+                twen = 6.5
+            end
+
+            if math.floor(distance) >= 115 then
+                twen = 7.5
+            end
+            if math.floor(distance) >= 150 then
+                twen = 8.5
+            end
+
+            if math.floor(distance) >= 185 then
+                twen = 9.5
+            end
+
+
+            if math.floor(distance) >= 200 then
+                twen = 10.5
+            end
+            
+            if game:GetService("Players").RodjerArc.PlayerGui.ScreenGui.dialogue.Text == "inventory full" then
+                _G.Are = false
+                print(twen)
+                
+                local TweenPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+                local TweenService = game:GetService("TweenService")
+
+                local Info = TweenInfo.new(
+                    twen, 
+                    Enum.EasingStyle.Linear, 
+                    Enum.EasingDirection.Out, 
+                    0, 
+                    true, 
+                    0 
+                )
+
+                local TweenGoals = {
+                    CFrame = CFrame.new(68.183136, 7.45033455, -85.3507233, 0.690459847, -3.82780172e-08, -0.723370731, -2.56127812e-08, 1, -7.73636728e-08, 0.723370731, 7.19440436e-08, 0.690459847)
+                }
+
+                local Tween = TweenService:Create(TweenPart,Info,TweenGoals)
+
+                Tween:Play()
+                wait(twen)
+                _G.Are = true
+            end
+            
+
+        end
+    else
+        _G.Are = false
+    end
+	end,
+})
+
+local Toggle = Tab:CreateToggle({
+	Name = "Sell Aura",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            _G.Sell = true
+            while _G.Sell == true do
+                wait(0.1)
+                sell()
+            end
+        else
+            _G.Sell = false
+        end
+	end,
+})
+
+local Label = Tab:CreateLabel("Change-Only bus location :(")
+
+local posbus = {
+    Vector3.new(142.874, 4.55281, -272.02),
+    Vector3.new(127.175, 9.49476, -245.267),
+    Vector3.new(130.736, 8.05248, -224.652),
+    Vector3.new(178.341, 6.588, -233.755),
+
+}
+
+local Slider = Tab:CreateSlider({
+	Name = "Every/sec:",
+	Range = {12, 120},
+	Increment = 1,
+	Suffix = "Sec:",
+	CurrentValue = 12,
+	Flag = "Slider1", 
+	Callback = function(s)
+        Sec = s
+	end,
+})
+
+local Toggle = Tab:CreateToggle({
+	Name = "Change Trash",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            _G.Change = true
+            local i = 1
+
+            while _G.Change == true do
+            
+                if i == 1 then
+                    i -= 1
+                    local rand = math.random(1,4)
+                    game.Players.LocalPlayer.Character.Humanoid:MoveTo(posbus[rand])
+                end
+            
+                wait(Sec)
+                i += 1
+            end
+        else
+            _G.Change = false
+        end
+	end,
+})
+
+local Label = Tab:CreateLabel("Robery")
+
+
+
+local Toggle = Tab:CreateToggle({
+	Name = "Auto-Grab-Beans",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            _G.Grab = true
+            while _G.Grab == true do
+                wait(0.1)
+                for i,v in pairs(game:GetService("Workspace").Store.Robbery.Stealables:GetChildren()) do
+                    if v.Name == "Beans" then
+                        fireproximityprompt(v.ProximityPrompt, 1, true)
+                    end
+                end
+            end
+        else
+            _G.Grab = false
+        end
+	end,
+})
+
+local Tab = Window:CreateTab("Visuals", 4483362458)
+
+local Section = Tab:CreateSection("Visual Functions")
+
+
+local Button = Tab:CreateButton({
+	Name = "Trash Max Hitbox",
+	Callback = function()
+		for i,v in pairs(game:GetService("Workspace").hitboxes:GetChildren()) do
+            v.Size = Vector3.new(20,6,20)
+        end
+	end,
+})
+
+
+local Toggle = Tab:CreateToggle({
+	Name = "Visualiz Hitbox",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            for i,v in pairs(game:GetService("Workspace").hitboxes:GetChildren()) do
+                v.Transparency = 0.5
+                v.Color = Color3.new(0, 0, 165)
+            end
+        else
+            for i,v in pairs(game:GetService("Workspace").hitboxes:GetChildren()) do
+                v.Transparency = 1
+                v.Color = Color3.new(0, 0, 165)
+            end
+        end
+	end,
+})
+
+
+
+local Toggle = Tab:CreateToggle({
+	Name = "Off-Notification",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.dialogue.TextTransparency = 1
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.dialogue.dialogueScript.Disabled = false
+        else
+                 game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.dialogue.TextTransparency = 0
+            game:GetService("Players").LocalPlayer.PlayerGui.ScreenGui.dialogue.dialogueScript.Disabled = false
+        end
+	end,
+})
+
+local Tab = Window:CreateTab("Character", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("Player Functions")
+
+local Slider = Tab:CreateSlider({
+	Name = "Speed",
+	Range = {16, 24},
+	Increment = 1,
+	Suffix = "Speed Value:",
+	CurrentValue = 16,
+	Flag = "Slider1", 
+	Callback = function(s)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+
+	end,
+})
+
+local Slider = Tab:CreateSlider({
+	Name = "JumpPower",
+	Range = {50, 100},
+	Increment = 1,
+	Suffix = "Jump Value:",
+	CurrentValue = 50,
+	Flag = "Slider1", 
+    Callback = function(s)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+
+	end,
+})
+
+local Slider = Tab:CreateSlider({
+	Name = "HipHeight",
+	Range = {0, 100},
+	Increment = 1,
+	Suffix = "Height Value:",
+	CurrentValue = 0,
+	Flag = "Slider1", 
+    Callback = function(s)
+        game.Players.LocalPlayer.Character.Humanoid.HipHeight = s
+
+	end,
+})
+
+
+local Tab = Window:CreateTab("Other", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("o:")
+
+local Button = Tab:CreateButton({
+	Name = "Buy Bat / Need 5$",
+	Callback = function()
+        fireclickdetector(game:GetService("Workspace").Bats.Handle.ClickDetector, 1)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Buy Pistol / Need 350$",
+	Callback = function()
+        fireclickdetector(game:GetService("Workspace").aToolsMap.Pistol.ClickDetector, 1)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Upgrade Gold Stick",
+	Callback = function()
+        fireclickdetector(game:GetService("Workspace").Anvil.ClickDetector, 1)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Car godmode",
+	Callback = function()
+        _G.Car =true
+        while _G.Car == true do
+            wait(0.01)
+            for i,v in pairs(game:GetService("Workspace").traffic:GetDescendants()) do
+                if v:IsA("MeshPart") then
+                    v.CanCollide = false
+                    if v:FindFirstChild("TouchInterest") then
+                        v.TouchInterest:Remove()
+                    end
+                end
+            end
+        end
+	end,
+})
+
+local Toggle = Tab:CreateToggle({
+	Name = "Spam Sound",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(state)
+        if state then
+            _G.Sound = true
+            while _G.Sound == true do
+                wait(0.01)
+                game:GetService("ReplicatedStorage"):WaitForChild("huh"):FireServer()
+            end
+        else
+            _G.Sound = false
+        end
+	end,
+})
+
+
+
+local Tab = Window:CreateTab("UPDATES 17.02.2023", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("o:")
