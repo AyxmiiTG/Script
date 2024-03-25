@@ -1,0 +1,17 @@
+local ArceusUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/SPDM-Team/ArceusX-V3-Scripts/main/ArceusUI.lua"))()
+
+ArceusUI:SetTitle("Arceus X <font color='rgb(0, 190, 0)'>|</font> ToiletEz")
+
+ArceusUI:SetLogo("MyLogo.png", "https://mywebsite/myimage.png")
+
+local myButton = ArceusUI:AddButton("Dupecash 1", function(...)
+    local extraValues = {...}
+    function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Spotlight Man", "Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
+
+end, myExtraValues)
