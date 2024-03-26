@@ -8,10 +8,10 @@ tab.newToggle("Dupe1", "Dupecash!", false, function(toggleState)
     if toggleState then
 local args = {
     [1] = "Spotlight Man",
-    [2] = CFrame.new(-278.5350036621094, 2.6999435424804688, -84.94473266601562, 1, 0, 0, 0, 1, 0, 0, 0, 1),
-    [3] = workspace:WaitForChild("DO NOT DELETE DO NOT MOVE SOMEWHERE ELSE"),
+    [2] = CFrame.new(-320.8980407714844, 2.4300239086151123, 1.5908236503601074, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    [3] = workspace:WaitForChild("DO NOT DELETE OR PLACE SOMEHWERE ELSE"),
     [4] = false,
-    [5] = 5
+    [5] = 3
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Place"):InvokeServer(unpack(args))
