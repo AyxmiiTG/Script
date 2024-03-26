@@ -2,9 +2,9 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 local window = DrRayLibrary:Load("ToiletEz", "Default")
 
-local tab = DrRayLibrary.newTab("Dupe Money", "ImageIdHere")
+local tab = DrRayLibrary.newTab("Spotlight Camera", "ImageIdHere")
 
-tab.newToggle("Dupe 1 ($150)", "Dupecash!", false, function(toggleState)
+tab.newToggle("Dupe 1 ($150), (Spotlight Camera)", "Dupe Cash 🤑", false, function(toggleState)
     if toggleState then
 local args = {
     [1] = "Spotlight Man",
@@ -30,7 +30,7 @@ end
         print("Dupe Off")
     end
 end)
-tab.newToggle("Auto Upgrade Dupe", "Upgradedupe!", false, function(toggleState)
+tab.newToggle("Auto Upgrade Dupe", "Increases Earnings 😈", false, function(toggleState)
     if toggleState then
 while true do
 local args = {
@@ -42,5 +42,34 @@ game:GetService("ReplicatedStorage"):WaitForChild("Upgrade"):InvokeServer(unpack
 end
     else
         print("Upgrade Stopped")
+    end
+end)
+
+local tab = DrRayLibrary.newTab("Leprechaun Camera", "ImageIdHere")
+
+tab.newToggle("Dupe ($500) ,(Leprechaun Cameraman)", "Better Dupe/Better Earnings 🔥", false, function(toggleState)
+    if toggleState then
+local args = {
+    [1] = "Leprechaun Cameraman",
+    [2] = CFrame.new(-320.8980407714844, 2.4300239086151123, 1.5908236503601074, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    [3] = workspace:WaitForChild("DO NOT DELETE OR PLACE SOMEHWERE ELSE"),
+    [4] = false,
+    [5] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Place"):InvokeServer(unpack(args))
+wait(1)
+        while true do
+function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Leprechaun Cameraman", "Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Dupe Off")
     end
 end)
