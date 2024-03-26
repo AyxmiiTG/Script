@@ -1,0 +1,22 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("ToiletEz", "Default")
+
+local tab = DrRayLibrary.newTab("Dupe Money", "ImageIdHere")
+
+tab.newToggle("Dupe1", "Dupecash! (prints the state)", true, function(toggleState)
+    if toggleState then
+        while true do
+function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Spotlight Man", "Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Dupe Off")
+    end
+end)
