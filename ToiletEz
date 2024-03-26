@@ -4,7 +4,7 @@ local window = DrRayLibrary:Load("ToiletEz", "Default")
 
 local tab = DrRayLibrary.newTab("Dupe Money", "ImageIdHere")
 
-tab.newToggle("Dupe1", "Dupecash! (prints the state)", true, function(toggleState)
+tab.newToggle("Dupe1", "Dupecash!", false, function(toggleState)
     if toggleState then
         while true do
 function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
