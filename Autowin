@@ -28,23 +28,6 @@ game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Place
         print("Grind Off")
     end
 end)
-
-tab.newToggle("AutoDupe", "Dupe", true, function(toggleState)
-    if toggleState then
-        while true do
-function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
-
-local args = {
-    [1] = getNil("Spotlight Man", "Model")
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
-
-end
-    else
-        print("Off")
-    end
-end)
 tab.newToggle("Autostart", "Start", true, function(toggleState)
     if toggleState then
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(217.590088, 55.5500679, 924.39563, -0.993437886, -5.71544625e-08, -0.114372931, -5.21871186e-08, 1, -4.64253311e-08, 0.114372931, -4.01518889e-08, -0.993437886)
@@ -55,6 +38,34 @@ end)
 tab.newToggle("AutoPlay", "Play", true, function(toggleState)
     if toggleState then
         game:GetService("ReplicatedStorage"):WaitForChild("StartTP"):FireServer()
+    else
+        print("Off")
+    end
+end)
+tab.newToggle("Upgrade 1", "Upgrade", true, function(toggleState)
+    if toggleState then
+        while true do
+local args = {
+    [1] = workspace:WaitForChild("Units"):WaitForChild("Shamrock Speakerman")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Upgrade"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Off")
+    end
+end)
+tab.newToggle("Upgrade 2", "Upgrade", true, function(toggleState)
+    if toggleState then
+        while true do
+local args = {
+    [1] = workspace:WaitForChild("Units"):WaitForChild("Spotlight Cameraman")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Upgrade"):InvokeServer(unpack(args))
+
+end
     else
         print("Off")
     end
