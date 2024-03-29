@@ -1,0 +1,86 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("ToiletEz", "Default")
+
+local tab = DrRayLibrary.newTab("💰", "ImageIdHere")
+
+tab.newToggle("Generator 1 ($150), (Spotlight Camera)", "Generator 1", false, function(toggleState)
+    if toggleState then
+local args = {
+    [1] = "Spotlight Man",
+    [2] = CFrame.new(-320.8980407714844, 2.4300239086151123, 1.5908236503601074, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    [3] = workspace:WaitForChild("DO NOT DELETE OR PLACE SOMEHWERE ELSE"),
+    [4] = false,
+    [5] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Place"):InvokeServer(unpack(args))
+wait(1)
+        while true do
+function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Spotlight Man", "Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Dupe Off")
+    end
+end)
+tab.newToggle("Upgrade Generator", "Generator 1 Upgrade", false, function(toggleState)
+    if toggleState then
+while true do
+local args = {
+    [1] = workspace:WaitForChild("Units"):WaitForChild("Spotlight Man")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Upgrade"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Upgrade Stopped")
+    end
+end)
+tab.newToggle("Generator 2 ($500) ,(Leprechaun Cameraman)", "Generator 2", false, function(toggleState)
+    if toggleState then
+local args = {
+    [1] = "Leprechaun Cameraman",
+    [2] = CFrame.new(232.5395965576172, 18.4226131439209, 137.12953186035156, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+    [3] = workspace:WaitForChild("Map"):WaitForChild("Model"):WaitForChild("Part"),
+    [4] = false,
+    [5] = 5
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Place"):InvokeServer(unpack(args))
+wait(1)
+        while true do
+function getNil(name,class) for _,v in next, getnilinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+
+local args = {
+    [1] = getNil("Leprechaun Cameraman", "Model")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Sell"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Dupe Off")
+    end
+end)
+tab.newToggle("Upgrade Generator", "Generator 2 Upgrade", false, function(toggleState)
+    if toggleState then
+while true do
+local args = {
+    [1] = workspace:WaitForChild("Units"):WaitForChild("Leprechaun Cameraman")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Upgrade"):InvokeServer(unpack(args))
+
+end
+    else
+        print("Upgrade Stopped")
+    end
+end)
