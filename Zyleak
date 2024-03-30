@@ -1,0 +1,15 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("Zyleak's MM2", "Default")
+
+local tab = DrRayLibrary.newTab("Shop", "ImageIdHere")
+
+tab.newButton("Batwing", "Buy Instance", function()
+    local args = {
+    [1] = "Batwing",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
