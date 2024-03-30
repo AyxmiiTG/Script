@@ -2,7 +2,7 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 local window = DrRayLibrary:Load("ZYGreenX", "Default")
 
-local tab = DrRayLibrary.newTab("Shop", "ImageIdHere")
+local tab = DrRayLibrary.newTab("Shop🛒", "ImageIdHere")
 
 tab.newButton("Batwing", "Buy Instance", function()
     local args = {
@@ -44,6 +44,114 @@ tab.newButton("Nebula", "Buy Instance", function()
 game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
 end)
 
-tab.newButton("Button", "Prints Hello!", function()
-    
+tab.newButton("Peppermint", "Buy Instance", function()
+    local args = {
+    [1] = "Peppermint",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Heartblade", "Buy Instance", function()
+    local args = {
+    [1] = "Heartblade",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Vampire Edge", "Buy Instance", function()
+    local args = {
+    [1] = "VampireEdge",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Bio Blade", "Buy Instance", function()
+    local args = {
+    [1] = "Bioblade",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Cookieblade", "Buy Instance", function()
+    local args = {
+    [1] = "Cookieblade",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Old Glory Set", "Buy Instance", function()
+    local args = {
+    [1] = "OldGlory",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Virtual Set", "Buy Instance", function()
+    local args = {
+    [1] = "Virtual",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Phantom/Ghostly Set", "Buy Instance", function()
+    local args = {
+    [1] = "PhantomGodly",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Sakura Set", "Buy Instance", function()
+    local args = {
+    [1] = "Sakura",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Rainbow/Clouds Set", "Buy Instance", function()
+    local args = {
+    [1] = "Rainbowrbxknife",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+local tab = DrRayLibrary.newTab("Limited Sale🔥", "ImageIdHere")
+
+tab.newButton("Plungeatron 9000", "Buy Instance", function()
+    local args = {
+    [1] = "Plungeatron9000",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
 end)
