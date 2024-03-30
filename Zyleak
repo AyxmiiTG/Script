@@ -1,6 +1,6 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 
-local window = DrRayLibrary:Load("Zyleak's MM2", "Default")
+local window = DrRayLibrary:Load("ZYGreenX", "Default")
 
 local tab = DrRayLibrary.newTab("Shop", "ImageIdHere")
 
@@ -12,4 +12,38 @@ tab.newButton("Batwing", "Buy Instance", function()
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Prismatic", "Buy Instance", function()
+    local args = {
+    [1] = "Prismatic",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Eggblade", "Buy Instance", function()
+    local args = {
+    [1] = "Eggblade",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Nebula", "Buy Instance", function()
+    local args = {
+    [1] = "Nebula",
+    [2] = "Weapons",
+    [3] = "Coins"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Buy"):FireServer(unpack(args))
+end)
+
+tab.newButton("Button", "Prints Hello!", function()
+    
 end)
