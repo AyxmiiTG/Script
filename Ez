@@ -1,0 +1,26 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("SquidEz", "Default")
+
+local tab = DrRayLibrary.newTab("Auto", "ImageIdHere")
+
+tab.newToggle("AutoHoneycomb", "Auto Honeycomb", true, function(toggleState)
+    if toggleState then
+        local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SugarHoneycomb"):FireServer(unpack(args))
+    else
+        print("Done")
+    end
+end)
+
+tab.newToggle("AutoTug", "Auto Tug", true, function(toggleState)
+    if toggleState then
+        while true do
+game:GetService("ReplicatedStorage"):WaitForChild("TugRemote"):FireServer()
+    else
+        print("Tugged")
+    end
+end)
