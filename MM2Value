@@ -1,0 +1,6 @@
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Hello and Welcome.", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+
+game.Players.LocalPlayer.Chatted:Connect(function(msg)
+if msg == "/e Eggblade" then
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade is worth: 3", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end
