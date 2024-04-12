@@ -1,53 +1,37 @@
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 
 local window = DrRayLibrary:Load("MM2Value", "Default")
 
 local tab = DrRayLibrary.newTab("Godlies L:H", "ImageIdHere")
 
-tab.newButton("Eggblade", "ValueOnClick", function()
+tab.newButton("Eggblade", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: VALUE: 3 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Cookieblade", "ValueOnClick", function()
+tab.newButton("Cookieblade", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Cookieblade Statistics: VALUE: 4 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Peppermint", "ValueOnClick", function()
+tab.newButton("Peppermint", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Peppermint Statistics: VALUE: 6 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Nebula", "ValueOnClick", function()
+tab.newButton("Nebula", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Nebula Statistics: VALUE: 7 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Prismatic", "ValueOnClick", function()
+tab.newButton("Prismatic", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Prismatic Statistics: VALUE: 8 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Snowflake", "ValueOnClick", function()
+tab.newButton("Snowflake", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Snowflake Statistics: VALUE: 8 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Frostbite", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Frostbite Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } ) 
+tab.newButton("Frostbite", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Frostbite Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
-tab.newButton("Ghost Blade", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Ghost Blade Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
-end)
-
-tab.newButton("Saw", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Saw Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } ) 
-end)
-
-tab.newButton("Boneblade", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Boneblade Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
-end)
-
-tab.newButton("Handsaw", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Handsaw Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } ) 
-end)
-
-tab.newButton("Hallow's Blade", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Hallow's Blade Statistics: VALUE: 11 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } ) 
+tab.newButton("Ghostblade", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Ghostblade Statistics: VALUE: 10 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
