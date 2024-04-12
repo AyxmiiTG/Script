@@ -1,6 +1,9 @@
 game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Hello and Welcome.", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 
-game.Players.LocalPlayer.Chatted:Connect(function(msg)
-if msg == "/e Eggblade" then
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade is worth: 3", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
-end
+game.Players.PlayerAdded:Connect(function(player) -- runs every time a player joins
+    player.Chatted:Connect(function(msg) -- runs once the player that joined chats a message
+        if msg == "/e Eggblade" then -- create your conditions
+            game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade is worth: 3", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+        end
+    end)
+end)
