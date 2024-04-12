@@ -1,9 +1,33 @@
-game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Hello and Welcome.", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))
 
-game.Players.PlayerAdded:Connect(function(player) -- runs every time a player joins
-    player.Chatted:Connect(function(msg) -- runs once the player that joined chats a message
-        if msg == "/e Eggblade" then -- create your conditions
-            game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade is worth: 3", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
-        end
-    end)
+local window = DrRayLibrary:Load("MM2Value", "Default")
+
+local tab = DrRayLibrary.newTab("Godlies L:H", "ImageIdHere")
+
+tab.newButton("Eggblade", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: VALUE: 3 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Cookieblade", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Cookieblade Statistics: VALUE: 4 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Peppermint", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Peppermint Statistics: VALUE: 6 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Nebula", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Nebula Statistics: VALUE: 7 | DEMAND: 1 | RARITY: 1.5", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Prismatic", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Prismatic Statistics: VALUE: 8 | DEMAND: 1 | RARITY: 1.5", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Snowflake", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Snowflake Statistics: VALUE: 8 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Eternal II", "ValueOnClick", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eternal II Statistics: VALUE: 8 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
