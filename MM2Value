@@ -5,7 +5,9 @@ local window = DrRayLibrary:Load("MM2Value", "Default")
 local tab = DrRayLibrary.newTab("Godlies L:H", "ImageIdHere")
 
 tab.newButton("Eggblade", "ValueOnClick", function()
-    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: VALUE: 3 | DEMAND: 1 | RARITY: 2", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: VALUE: 3 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: Rarity: 2 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eggblade Statistics: Demand: 1 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
 
 tab.newButton("Cookieblade", "ValueOnClick", function()
