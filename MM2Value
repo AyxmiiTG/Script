@@ -95,3 +95,69 @@ end)
 tab.newButton("BattleAxe II", "ItemValueCheck", function()
     game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] BattleAxe II: VALUE: 16 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
 end)
+
+tab.newButton("Frostsaber", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Frostsaber: VALUE: 18 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Luger Cane", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Luger Cane: VALUE: 20 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Eternal Cane", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Eternal Cane: VALUE: 20 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Spider", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Spider: VALUE: 22 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Deathshard", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Deathshard: VALUE: 23 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Pumpking", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Pumpking: VALUE: 23 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Gingerblade", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Gingerblade: VALUE: 24 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Fang", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Fang: VALUE: 24 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Gemstone", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Ghostblade: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Minty", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Minty: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Tides", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Tides: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Heat", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Heat: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Pixel", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Pixel: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Chill", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Chill: VALUE: 26 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Slasher", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Slasher: VALUE: 28 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+tab.newButton("Clockwork", "ItemValueCheck", function()
+    game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[MM2Value] Clockwork: VALUE: 28 |", Color = Color3.fromRGB( 0,255,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+end)
+
+local tab = DrRayLibrary.newTab("Godlies T2", "ImageIdHere")
