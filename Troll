@@ -1,0 +1,64 @@
+while true do
+wait(.1)
+local args = {
+    [1] = " You",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Are",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Reading",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " This",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Endlessly",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " While",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Closing",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " These",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Notes",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+local args = {
+    [1] = " Now Restart.",
+    [2] = game:GetService("Players"):WaitForChild("playgames291")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Networking"):WaitForChild("UpdateNote"):FireServer(unpack(args))
+
+end
