@@ -1,0 +1,62 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("Pets Trading X", "Default")
+
+local tab = DrRayLibrary.newTab("Dupe", "ImageIdHere")
+
+tab.newToggle("Tri Dominus", "Dupe Wyvern/Dominus", true, function(toggleState)
+    if toggleState then     
+local args = {
+    [1] = {
+        ["10130"] = 0.5
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
+    else
+        print("Duped.")
+    end
+end)
+
+tab.newToggle("Auto Dominus", "OP😈", true, function(toggleState)
+    if toggleState then     
+local args = {
+    [1] = {
+        ["10040"] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
+    else
+        print("Done.")
+    end
+end)
+
+tab.newToggle("Auto Wyvern", "Nah💎", true, function(toggleState)
+    if toggleState then        
+local args = {
+    [1] = {
+        ["10096"] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
+    else
+        print("Done.")
+    end
+end)
+
+tab.newToggle("Auto Dragon", "Bro🔥", true, function(toggleState)
+    if toggleState then      
+local args = {
+    [1] = {
+        ["10080"] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Functions"):WaitForChild("Fuse"):WaitForChild("FuseRF"):InvokeServer(unpack(args))
+    else
+        print("Done.")
+    end
+end)
+
