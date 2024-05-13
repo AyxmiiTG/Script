@@ -1,0 +1,77 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("SelfIt", "Default")
+
+local tab = DrRayLibrary.newTab("Box Toy", "ImageIdHere")
+
+tab.newButton("Box Toy Air", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Air"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Egg", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Egg"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Box Toy", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Box Toy"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Noob", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Noob"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy House", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy  House"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Sanic", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Sanic"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Sandman", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Sandman"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Lem", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Lem"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
+
+tab.newButton("Box Toy Harambe", "BuyInstance", function()
+    local args = {
+    [1] = "Box Toy Harambe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("BuyItemCash"):FireServer(unpack(args))
+end)
