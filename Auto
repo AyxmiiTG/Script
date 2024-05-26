@@ -1,0 +1,23 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+
+local window = DrRayLibrary:Load("AutoChat", "Default")
+
+local tab = DrRayLibrary.newTab("Chat", "ImageIdHere")
+
+tab.newButton("Mech Bunny", "Type", function()
+    local args = {
+    [1] = "Buying Mech Bunny Titan for 2200 Gems Original Price | | No Increase ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+end)
+
+tab.newButton("Old Godly Cinema", "Type", function()
+    local args = {
+    [1] = "Buying Old Godly Cinema for 1900 Gems  Original Price | | No Increase ",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
+end)
