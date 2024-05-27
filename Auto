@@ -4,90 +4,34 @@ local window = DrRayLibrary:Load("Raise A Cartman", "Default")
 
 local tab = DrRayLibrary.newTab("Dungeon", "ImageIdHere")
 
-tab.newToggle("Dungeon 2", "Auto", false, function(toggleState)
+tab.newToggle("Auto Boss 2", "Auto", false, function(toggleState)
     if toggleState then
         while true do        wait(.1)
 local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Puncher"):WaitForChild("Torso"),
-    [3] = Vector3.new(2982.989990234375, 107.61260986328125, -731.8120727539062)
+    [2] = workspace:WaitForChild("Pharoah"):WaitForChild("Right Leg"),
+    [3] = Vector3.new(2622.273681640625, 106.7968521118164, -970.1318969726562)
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
 local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Puncher"):WaitForChild("Torso"),
-    [3] = Vector3.new(2951.08056640625, 106.69002532958984, -730.4121704101562)
+    [2] = workspace:WaitForChild("Pharoah"):WaitForChild("Right Leg"),
+    [3] = Vector3.new(2622.273681640625, 106.7968521118164, -970.1318969726562)
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
 local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Puncher"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(2985.936279296875, 108.09335327148438, -756.3720092773438)
+    [2] = workspace:WaitForChild("Pharoah"):WaitForChild("Right Leg"),
+    [3] = Vector3.new(2622.273681640625, 106.7968521118164, -970.1318969726562)
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
 local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("Torso"),
-    [3] = Vector3.new(2907.4208984375, 107.64239501953125, -749.3501586914062)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Puncher"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(2931.4345703125, 107.9039077758789, -728.2958984375)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("Torso"),
-    [3] = Vector3.new(2830.588134765625, 106.89095306396484, -743.7418823242188)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("Left Arm"),
-    [3] = Vector3.new(2832.792724609375, 107.73323059082031, -746.39794921875)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(2724.656005859375, 106.81339263916016, -731.5740966796875)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("Right Arm"),
-    [3] = Vector3.new(2878.84716796875, 107.96524810791016, -768.2427978515625)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Ranger"):WaitForChild("Torso"),
-    [3] = Vector3.new(2666.2060546875, 106.8682861328125, -762.9908447265625)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("MutatedPuncher"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(2695.930908203125, 106.83380889892578, -753.1375122070312)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
-local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
-    [2] = workspace:WaitForChild("Ranger"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(2607.953125, 107.68284606933594, -821.8499755859375)
+    [2] = workspace:WaitForChild("Pharoah"):WaitForChild("Right Leg"),
+    [3] = Vector3.new(2622.273681640625, 106.7968521118164, -970.1318969726562)
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
