@@ -6,7 +6,9 @@ local tab = DrRayLibrary.newTab("Main", "ImageIdHere")
 
 tab.newToggle("Auto Dungeon 2", "AutoComplete", false, function(toggleState)
     if toggleState then
-        local args = {
+        while true do
+wait(.1)
+local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.Ak47,
     [2] = workspace:WaitForChild("Puncher"):WaitForChild("Torso"),
     [3] = Vector3.new(2982.989990234375, 107.61260986328125, -731.8120727539062)
@@ -125,6 +127,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
+end)
     else
         print("Turned Off")
     end
@@ -134,13 +137,8 @@ local tab = DrRayLibrary.newTab("Auto Kenny", "ImageIdHere")
 
 tab.newToggle("Auto Kenny", "AutoShoot", false, function(toggleState)
     if toggleState then
-        local args = {
-    [1] = game:GetService("Players").LocalPlayer.Character.m4a1,
-    [2] = workspace:WaitForChild("Map"):WaitForChild("Kenny"):WaitForChild("HumanoidRootPart"),
-    [3] = Vector3.new(288.4401550292969, 3.2933897972106934, 82.88945770263672)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
+        while true do
+wait(.5)
 local args = {
     [1] = game:GetService("Players").LocalPlayer.Character.m4a1,
     [2] = workspace:WaitForChild("Map"):WaitForChild("Kenny"):WaitForChild("HumanoidRootPart"),
@@ -197,6 +195,14 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.m4a1,
+    [2] = workspace:WaitForChild("Map"):WaitForChild("Kenny"):WaitForChild("HumanoidRootPart"),
+    [3] = Vector3.new(288.4401550292969, 3.2933897972106934, 82.88945770263672)
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("Shot"):FireServer(unpack(args))
+end)
     else
         print("Turned Off")
     end
