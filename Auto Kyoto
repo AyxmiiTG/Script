@@ -44,7 +44,7 @@ TitleLabel.Size = UDim2.new(1, 0, 0.2, 0)
 TitleLabel.Position = UDim2.new(0, 0, 0, 0)
 TitleLabel.TextScaled = true
 TitleLabel.BackgroundColor3 = Color3.new(100, 0, 0)
-TitleLabel.TextColor3 = Color3.new(1, 1, 1)
+TitleLabel.TextColor3 = Color3.new(0, 0, 0)
 TitleLabel.BorderSizePixel = 0
 
 -- Ping Button (will auto-detect ping)
@@ -54,7 +54,7 @@ PingButton.BackgroundColor3 = Color3.new(50, 0, 0)
 PingButton.Size = UDim2.new(0.8, 0, 0.2, 0)
 PingButton.Position = UDim2.new(0.1, 0, 0.4, 0)
 PingButton.TextScaled = true
-PingButton.TextColor3 = Color3.new(150, 0, 0)
+PingButton.TextColor3 = Color3.new(0, 0, 0)
 PingButton.BorderSizePixel = 0
 
 -- Auto Kyoto button (hidden initially)
@@ -65,7 +65,7 @@ AutoKyotoButton.Position = UDim2.new(0.1, 0, 0.7, 0)
 AutoKyotoButton.Text = "Kyoto (Garou)"
 AutoKyotoButton.TextScaled = true
 AutoKyotoButton.Visible = false  -- Only appears after ping check
-AutoKyotoButton.TextColor3 = Color3.new(150, 0, 0)
+AutoKyotoButton.TextColor3 = Color3.new(0, 0, 0)
 AutoKyotoButton.BorderSizePixel = 0
 
 -- Function to calculate the correct wait time based on ping (increased reductions)
