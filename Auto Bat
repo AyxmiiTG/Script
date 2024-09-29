@@ -147,7 +147,7 @@ AutoKyotoButton.MouseButton1Click:Connect(function()
     wait(2.5)
     teleportForward()
     pressKey2()
-    wait(3)
+    wait(2.5)
     pressKey3()
 
     -- Show a notification that the combo was performed
