@@ -130,6 +130,14 @@ local function pressKey2()
     end
 end
 
+local function pressKey3()
+    local tool = plr.Backpack:FindFirstChild("Homerun")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
 -- Auto Kyoto button click event
 AutoKyotoButton.MouseButton1Click:Connect(function()
     local ping = UserPing:GetValue() -- Get ping again before execution
@@ -139,6 +147,8 @@ AutoKyotoButton.MouseButton1Click:Connect(function()
     wait(2.5)
     teleportForward()
     pressKey2()
+    wait(3)
+    pressKey3()
 
     -- Show a notification that the combo was performed
     showRobloxNotification("✅")
