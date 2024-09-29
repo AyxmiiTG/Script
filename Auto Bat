@@ -136,7 +136,7 @@ AutoKyotoButton.MouseButton1Click:Connect(function()
     local waitTime = calculateWaitTime(ping)
     
     pressKey1()
-    wait(2)
+    wait(2.5)
     teleportForward()
     pressKey2()
 
