@@ -113,7 +113,7 @@ end)
 
 -- Function for Key Press Combo
 local function pressKey1()
-    local tool = plr.Backpack:FindFirstChild("Homerun")
+    local tool = plr.Backpack:FindFirstChild("Foul Ball")
     if tool then
         tool.Parent = chr
         wait(1)
@@ -135,10 +135,10 @@ AutoKyotoButton.MouseButton1Click:Connect(function()
     local ping = UserPing:GetValue() -- Get ping again before execution
     local waitTime = calculateWaitTime(ping)
     
-    pressKey2()
+    pressKey1()
     wait(3)
     teleportForward()
-    pressKey1()
+    pressKey2()
 
     -- Show a notification that the combo was performed
     showRobloxNotification("✅")
