@@ -1,0 +1,315 @@
+-- Create the main GUI
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TitleLabel = Instance.new("TextLabel")
+local AutoKyotoButton = Instance.new("TextButton")
+local PingButton = Instance.new("TextButton")
+local AutoKyotoButton2 = Instance.new("TextButton")
+local AutoKyotoButton3 = Instance.new("TextButton")
+
+local plr = game.Players.LocalPlayer
+local chr = plr.Character or plr.CharacterAdded:Wait()
+local hum = chr:WaitForChild("Humanoid")
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local UserPing = game:GetService("Stats").Network.ServerStatsItem["Data Ping"] -- Real ping
+
+-- Define the teleport distance
+local teleportDistance = 42
+
+-- Function to teleport the player forward
+local function teleportForward()
+    -- Get the direction the character is facing
+    local forwardDirection = humanoidRootPart.CFrame.LookVector
+
+    -- Calculate the new position
+    local newPosition = humanoidRootPart.Position + forwardDirection * teleportDistance
+
+    -- Set the new position
+    humanoidRootPart.CFrame = CFrame.new(newPosition)
+end
+
+-- Define the teleport distance
+local teleportDistance = -5
+
+-- Function to teleport the player forward
+local function teleportBackward()
+    -- Get the direction the character is facing
+    local forwardDirection = humanoidRootPart.CFrame.LookVector
+
+    -- Calculate the new position
+    local newPosition = humanoidRootPart.Position + forwardDirection * teleportDistance
+
+    -- Set the new position
+    humanoidRootPart.CFrame = CFrame.new(newPosition)
+end
+
+-- Define the teleport distance
+local teleportDistance = 23
+
+-- Function to teleport the player forward
+local function teleportForward2()
+    -- Get the direction the character is facing
+    local forwardDirection = humanoidRootPart.CFrame.LookVector
+
+    -- Calculate the new position
+    local newPosition = humanoidRootPart.Position + forwardDirection * teleportDistance
+
+    -- Set the new position
+    humanoidRootPart.CFrame = CFrame.new(newPosition)
+end
+
+-- Define the teleport distance
+local teleportDistance = 65
+
+-- Function to teleport the player forward
+local function teleportForward3()
+    -- Get the direction the character is facing
+    local forwardDirection = humanoidRootPart.CFrame.LookVector
+
+    -- Calculate the new position
+    local newPosition = humanoidRootPart.Position + forwardDirection * teleportDistance
+
+    -- Set the new position
+    humanoidRootPart.CFrame = CFrame.new(newPosition)
+end
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- GUI Styling (Smaller size)
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.new(100, 100, 100)
+MainFrame.Size = UDim2.new(0, 250, 0, 300) -- Smaller size
+MainFrame.Position = UDim2.new(0.5, -125, 0.5, -150)
+MainFrame.Active = true
+MainFrame.Draggable = true -- Draggable
+
+TitleLabel.Parent = MainFrame
+TitleLabel.Text = "Yelah's Samurai"
+TitleLabel.Size = UDim2.new(1, 0, 0.2, 0)
+TitleLabel.Position = UDim2.new(0, 0, 0, 0)
+TitleLabel.TextScaled = true
+TitleLabel.BackgroundColor3 = Color3.new(100, 100, 0)
+TitleLabel.TextColor3 = Color3.new(0, 0, 0)
+TitleLabel.BorderSizePixel = 0
+
+-- Ping Button (will auto-detect ping)
+PingButton.Parent = MainFrame
+PingButton.Text = "Activate 💛"
+PingButton.BackgroundColor3 = Color3.new(100, 100, 0)
+PingButton.Size = UDim2.new(0.8, 0, 0.15, 0)
+PingButton.Position = UDim2.new(0.1, 0, 0.25, 0)
+PingButton.TextScaled = true
+PingButton.TextColor3 = Color3.new(0, 0, 0)
+PingButton.BorderSizePixel = 0
+
+-- Auto Kyoto button (hidden initially)
+AutoKyotoButton.Parent = MainFrame
+AutoKyotoButton.BackgroundColor3 = Color3.new(100, 100, 0)
+AutoKyotoButton.Size = UDim2.new(0.8, 0, 0.15, 0)
+AutoKyotoButton.Position = UDim2.new(0.1, 0, 0.43, 0)
+AutoKyotoButton.Text = "Combo 💛"
+AutoKyotoButton.TextScaled = true
+AutoKyotoButton.Visible = false  -- Only appears after ping check
+AutoKyotoButton.TextColor3 = Color3.new(0, 0, 0)
+AutoKyotoButton.BorderSizePixel = 0
+
+-- Auto Kyoto button (hidden initially)
+AutoKyotoButton2.Parent = MainFrame
+AutoKyotoButton2.BackgroundColor3 = Color3.new(100, 100, 0)
+AutoKyotoButton2.Size = UDim2.new(0.8, 0, 0.15, 0)
+AutoKyotoButton2.Position = UDim2.new(0.1, 0, 0.61, 0)
+AutoKyotoButton2.Text = "Combo Variant | 2 💛"
+AutoKyotoButton2.TextScaled = true
+AutoKyotoButton2.Visible = false  -- Only appears after ping check
+AutoKyotoButton2.TextColor3 = Color3.new(0, 0, 0)
+AutoKyotoButton2.BorderSizePixel = 0
+
+-- Auto Kyoto button (hidden initially)
+AutoKyotoButton3.Parent = MainFrame
+AutoKyotoButton3.BackgroundColor3 = Color3.new(100, 100, 0)
+AutoKyotoButton3.Size = UDim2.new(0.8, 0, 0.15, 0)
+AutoKyotoButton3.Position = UDim2.new(0.1, 0, 0.8, 0)
+AutoKyotoButton3.Text = "Combo Variant | 3 💛"
+AutoKyotoButton3.TextScaled = true
+AutoKyotoButton3.Visible = false  -- Only appears after ping check
+AutoKyotoButton3.TextColor3 = Color3.new(0, 0, 0)
+AutoKyotoButton3.BorderSizePixel = 0
+
+-- Function to calculate the correct wait time based on ping (increased reductions)
+local function calculateWaitTime(ping)
+    local baseWaitTime = 1.45 -- Original base wait time
+    local adjustedWaitTime
+
+    if ping <= 50 then
+        adjustedWaitTime = baseWaitTime * 0.65 -- 35% decrease for <= 50 ping
+    elseif ping <= 100 then
+        adjustedWaitTime = baseWaitTime * 0.75 -- 25% decrease for <= 100 ping
+    elseif ping <= 150 then
+        adjustedWaitTime = baseWaitTime * 0.85 -- 15% decrease for <= 150 ping
+    elseif ping <= 200 then
+        adjustedWaitTime = baseWaitTime * 0.95 -- 5% decrease for <= 200 ping
+    elseif ping <= 250 then
+        adjustedWaitTime = baseWaitTime * 1.05 -- 5% increase for <= 250 ping
+    else
+        adjustedWaitTime = baseWaitTime * 1.15 -- 15% increase for > 250 ping
+    end
+
+    return adjustedWaitTime
+end
+
+-- Roblox-style Notification Function
+local function showRobloxNotification(text)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Yelah's Samurai",
+        Text = text,
+        Duration = 3,  -- Stays for 3 seconds
+    })
+end
+
+-- Ping Button click event
+PingButton.MouseButton1Click:Connect(function()
+    local ping = UserPing:GetValue() -- Get actual ping from Roblox
+    local waitTime = calculateWaitTime(ping)
+    
+    -- Display Roblox notification about detected ping and wait time
+    showRobloxNotification("Ping: " .. math.floor(ping) .. " ms | Wait Time: " .. waitTime .. "s")
+
+    -- Show Auto Kyoto button after ping check
+    AutoKyotoButton.Visible = true
+   AutoKyotoButton2.Visible = true
+   AutoKyotoButton3.Visible = true
+end)
+
+-- Function for Key Press Combo
+local function pressKey1()
+    local tool = plr.Backpack:FindFirstChild("Pinpoint Cut")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey2()
+    local tool = plr.Backpack:FindFirstChild("Atmos Cleave")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey3()
+    local tool = plr.Backpack:FindFirstChild("Quick Slice")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey4()
+    local tool = plr.Backpack:FindFirstChild("Pinpoint Cut")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey5()
+    local tool = plr.Backpack:FindFirstChild("Quick Slice")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey6()
+    local tool = plr.Backpack:FindFirstChild("Atmos Cleave")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+local function pressKey7()
+    local tool = plr.Backpack:FindFirstChild("Atmos Cleave")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey8()
+    local tool = plr.Backpack:FindFirstChild("Pinpoint Cut")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+local function pressKey9()
+    local tool = plr.Backpack:FindFirstChild("Quick Slice")
+    if tool then
+        tool.Parent = chr
+        wait(1)
+        tool.Parent = plr.Backpack
+    end
+end
+
+-- Auto Kyoto button click event
+AutoKyotoButton.MouseButton1Click:Connect(function()
+    local ping = UserPing:GetValue() -- Get ping again before execution
+    local waitTime = calculateWaitTime(ping)
+    
+    pressKey1()
+    wait(1)
+    teleportForward()
+    pressKey2()
+    wait(2.5)
+    teleportBackward()
+    pressKey3()
+
+    -- Show a notification that the combo was performed
+    showRobloxNotification("💛")
+end)
+
+-- Auto Kyoto button click event
+AutoKyotoButton2.MouseButton1Click:Connect(function()
+    local ping = UserPing:GetValue() -- Get ping again before execution
+    local waitTime = calculateWaitTime(ping)
+    
+    pressKey4()
+    wait(1)
+    teleportForward()
+    pressKey5()
+    wait(1)
+    teleportForward2()
+    pressKey6()
+
+    -- Show a notification that the combo was performed
+    showRobloxNotification("💛")
+end)
+
+-- Auto Kyoto button click event
+AutoKyotoButton3.MouseButton1Click:Connect(function()
+    local ping = UserPing:GetValue() -- Get ping again before execution
+    local waitTime = calculateWaitTime(ping)
+    
+    pressKey7()
+    wait(2.5)
+    teleportBackward()
+    pressKey8()
+    wait(1)
+    teleportForward3()
+    pressKey9()
+
+    -- Show a notification that the combo was performed
+    showRobloxNotification("💛")
+end)
