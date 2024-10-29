@@ -78,7 +78,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Yelah Blow"
+ToolName.Text = "Hailey's Encouragement"
 
 
 local player = game.Players.LocalPlayer
@@ -96,7 +96,7 @@ local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Whirlwind Grab"
+ToolName.Text = "Hailey's Strength"
 
 
 local player = game.Players.LocalPlayer
@@ -114,7 +114,7 @@ local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Enrage"
+ToolName.Text = "Hailey's Swipe"
 
 
 local player = game.Players.LocalPlayer
@@ -132,7 +132,7 @@ local baseButton = hotbarFrame:FindFirstChild("4").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Destruction Parry"
+ToolName.Text = "Hailey's Parry"
 
 
 local Players = game:GetService("Players")
@@ -156,7 +156,7 @@ local function findGuiAndSetText()
 
             if textLabel then
 
-                textLabel.Text = "Yelah Drive"
+                textLabel.Text = "HAILEY!"
 
             end
 
